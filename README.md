@@ -3,10 +3,11 @@ Debian/Ubuntu Server Hardening
 
 EASY RUN
   
-  
+```bash
   wget https://raw.githubusercontent.com/gomidee/Hardening/main/palmtree.sh?token=AVNJBY5J3M4UKHVKKM32R5LBWQICK
   chmod +x palmtree.sh
   sudo ./palmtree.sh
+```
 
 Hey, just a little notice
 
