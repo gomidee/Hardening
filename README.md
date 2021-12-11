@@ -1,6 +1,11 @@
 # Hardening
 Debian/Ubuntu Server Hardening
 
+  EASY RUN
+  wget https://raw.githubusercontent.com/gomidee/Hardening/main/palmtree.sh?token=AVNJBY5J3M4UKHVKKM32R5LBWQICK
+  chmod +x palmtree.sh
+  sudo ./palmtree.sh
+
 Hey, just a little notice
 
 • This script is written for Debian/Ubuntu but it may work on other Linux flavours
