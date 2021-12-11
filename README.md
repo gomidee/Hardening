@@ -4,9 +4,9 @@ Debian/Ubuntu Server Hardening
 EASY RUN
   
 ```bash
-  wget https://raw.githubusercontent.com/gomidee/Hardening/main/palmtree.sh?token=AVNJBY5J3M4UKHVKKM32R5LBWQICK
-  chmod +x palmtree.sh
-  sudo ./palmtree.sh
+  wget https://raw.githubusercontent.com/gomidee/Hardening/main/palmtree.sh?token=AVNJBY2USKI6D4DGN4YG4SLBWUY7Q
+  chmod +x palmtree.sh?token=AVNJBY23ESYQRYDBX2TB5A3BWUYT6
+  sudo ./palmtree.sh?token=AVNJBY23ESYQRYDBX2TB5A3BWUYT6
 ```
 
 Hey, just a little notice
