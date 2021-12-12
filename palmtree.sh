@@ -21,9 +21,9 @@ sed -i -E 's/^HISTFILESIZE=/#HISTFILESIZE=/' ~/.bashrc
 echo "HISTFILESIZE=0" >> ~/.bashrc
 source ~/.bashrc
 
-sudo apt update
-sudo apt upgrade -y
-sudo apt install ufw vim wget curl wget
+apt update
+apt upgrade -y
+apt install ufw vim wget curl wget
 
 #Setting up Tailscale
 
@@ -44,8 +44,8 @@ if [[ $input == "Y" || $input == "y" ]]; then
                 sudo sysctl -p /etc/sysctl.conf
 
                   #Add UFW allow rules
-		  sudo ufw allow 41641/udp
-		  sudo ufw allow in on tailscale0 
+		  ufw allow 41641/udp
+		  ufw allow in on tailscale0 
 
 		  #Advertise as Exit Node
 
@@ -95,7 +95,7 @@ read input
   fi
 
   #Block ping requests
-sudo sysctl -w net.ipv4.icmp_echo_ignore_all=1
+sysctl -w net.ipv4.icmp_echo_ignore_all=1
 
 #To unblock ping requests, use following command
   #sudo sysctl -w net.ipv4.icmp_echo_ignore_all=0
