@@ -31,6 +31,7 @@ echo "Would you like to intall Tailscale? [Y,n]"
 read input
 if [[ $input == "Y" || $input == "y" ]]; then
 
+	apt install sudo
         curl -fsSL https://tailscale.com/install.sh | sh
 
         echo "Would you like to set this as an exit node? [Y, n]"
@@ -220,5 +221,6 @@ else
 
 fi
 
+apt remove sudo
 
 #END
