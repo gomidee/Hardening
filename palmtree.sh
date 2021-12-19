@@ -205,7 +205,7 @@ ufw reload
 	    
 	    read port1
 	    
-cat << "EOF" >> /etc/ufw/before.rules.backup
+cat << "EOF" >> /etc/ssh/sshd_config.backup
 	    
 	    #	$OpenBSD: sshd_config,v 1.100 2016/08/15 12:32:04 naddy Exp $
 
