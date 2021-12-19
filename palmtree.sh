@@ -332,6 +332,11 @@ Subsystem	sftp	/usr/lib/openssh/sftp-server
 #	ForceCommand cvs server
 EOF
 
+ else
+       echo "No Worries!"
+
+  fi
+
 	    
 	   
 	    
