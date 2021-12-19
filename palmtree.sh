@@ -203,6 +203,8 @@ ufw reload
     
 vi /etc/ssh/sshd_config
 
+systemctl restart sshd
+
  else
        echo "No Worries!"
 
