@@ -22,7 +22,7 @@ echo "HISTFILESIZE=0" >> ~/.bashrc
 source ~/.bashrc
 
 apt update
-apt upgrade -y
+apt full-upgrade -y
 apt install ufw vim wget curl wget
 
 #Setting up Tailscale
@@ -55,6 +55,7 @@ if [[ $input == "Y" || $input == "y" ]]; then
 		
 	else
 		echo "Sweet... No exit node"
+		tailscale up
 
         fi
 
@@ -203,15 +204,7 @@ systemctl restart sshd
 
   fi
 
-	    
-	   
-	    
-	    
-	    
-	    
-	    
-
- echo "Would you like to restart your system? (highly recommended) [Y, n]"
+echo "Would you like to restart your system? (highly recommended) [Y, n]"
  read input
    if [[ $input == "Y" || $input == "y" ]]; then
 
