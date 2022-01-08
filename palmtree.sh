@@ -23,7 +23,7 @@ source ~/.bashrc
 
 apt update
 apt full-upgrade -y
-apt install ufw vim wget curl wget
+apt install ufw vim wget curl wget docker.io docker-compose
 
 #Setting up Tailscale
 
