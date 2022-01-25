@@ -20,7 +20,7 @@ NOTICE ->
 ```
 
 
-  #Create a SSH Key Pair on your computer
+-> Create a SSH Key Pair on your computer
 
 #Create ssh directory, you probablly know what to do...
 
