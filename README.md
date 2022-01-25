@@ -4,10 +4,13 @@ Debian/Ubuntu Server Hardening
 NOTICE ->
 
 • This script is written for Debian/Ubuntu but it may work on other Linux flavours
+
 • Read before you run, you may not want to install some packages and the setup may not be optimal for you. 
       • If so, please feel free to fork and update it to your preferences, that would be awesome!
 • This script is designed for servers
+
 • Please follow some steps before running the script, they're essential for optimal setup :)
+
 • Personally I don't have the 'sudo' installed by default so after running the script you may want to install it again
 
   PLEASE RUN THIS SCRIPT AS ROOT USER OR SUDO PRIVILEGES
