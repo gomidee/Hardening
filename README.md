@@ -4,17 +4,16 @@ Debian/Ubuntu Server Hardening
 EASY RUN
   
 ```bash
-  wget https://raw.githubusercontent.com/gomidee/Hardening/main/palmtree.sh?token=AVNJBY2USKI6D4DGN4YG4SLBWUY7Q
-  chmod +x palmtree.sh?token=AVNJBY23ESYQRYDBX2TB5A3BWUYT6
-  sudo ./palmtree.sh?token=AVNJBY23ESYQRYDBX2TB5A3BWUYT6
+  wget <RAWFILE>
+  chmod +x <FILENAME>
+  sudo ./<FILENAME>
 ```
 
 Hey, just a little notice
 
 • This script is written for Debian/Ubuntu but it may work on other Linux flavours
-• Please, I highly recommend following these steps manually for optimal results
-
-#Creating a VPS
+• Read before you run
+• This script is designed for servers
 
   #Create a SSH Key Pair on your computer
 
