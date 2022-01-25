@@ -3,7 +3,7 @@
   #Scallop
   #Debian/Ubuntu Server Hardening
   
-#Please Excecute this script with sudo permissions of as 'su'
+#Please run this script with sudo permissions or as root user
 
   echo "Are you ready? [Y,n]"
   read input
@@ -55,13 +55,14 @@ if [[ $input == "Y" || $input == "y" ]]; then
 		
 	else
 		echo "Sweet... No exit node"
-		tailscale up
 
         fi
 
 else
         echo "Cool..."
 fi
+
+tailscale up
 
 #Setting up UFW
 
@@ -203,6 +204,8 @@ systemctl restart sshd
        echo "No Worries!"
 
   fi
+  
+apt remove sudo
 
 echo "Would you like to restart your system? (highly recommended) [Y, n]"
  read input
@@ -214,6 +217,5 @@ else
 
 fi
 
-apt remove sudo
 
 #END
