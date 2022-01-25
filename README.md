@@ -1,19 +1,24 @@
 # Hardening
 Debian/Ubuntu Server Hardening
 
-EASY RUN
-  
+NOTICE ->
+
+• This script is written for Debian/Ubuntu but it may work on other Linux flavours
+• Read before you run, you may not want to install some packages and the setup may not be optimal for you. 
+      • If so, please feel free to fork and update it to your preferences, that would be awesome!
+• This script is designed for servers
+• Please follow some steps before running the script, they're essential for optimal setup :)
+• Personally I don't have the 'sudo' installed by default so after running the script you may want to install it again
+
+  PLEASE RUN THIS SCRIPT AS ROOT USER OR SUDO PRIVILEGES
+
+  Downloading and Running the Script
 ```bash
   wget <RAWFILE>
   chmod +x <FILENAME>
   sudo ./<FILENAME>
 ```
 
-Hey, just a little notice
-
-• This script is written for Debian/Ubuntu but it may work on other Linux flavours
-• Read before you run
-• This script is designed for servers
 
   #Create a SSH Key Pair on your computer
 
@@ -109,8 +114,4 @@ Hey, just a little notice
   apt upgrade -y
   ```
 
-#If your server has sudo enabled, you can exit root and run the script as your user, if not run the script as 'su'
-
-#PLEASE, READ THE SCRIPT BEFORE YOU EXECUTE IT, I TAKE NO RESPONSABILITY OVER ANY DAMANGES OR UNWANTED CONFIG CHANGES TO YOUR SERVER (although I use this script myself)
-
-HAVE AN AWESOME DAY! :)
+RUN THE SCRIPT, YOU SHOULD BE GOOD TO GO!
