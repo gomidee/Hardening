@@ -3,7 +3,21 @@
   #Scallop
   #Debian/Ubuntu Server Hardening
   
-#Please run this script with sudo permissions or as root user
+echo "Please run this script with sudo permissions or as root user"
+
+NAME="PalmTreeScript"
+VERSION="1.2.1"
+
+echo -e "
+ ____       _         _____              ____            _       _   
+|  _ \ __ _| |_ __ __|_   _| __ ___  ___/ ___|  ___ _ __(_)_ __ | |_ 
+| |_) / _` | | '_ ` _ \| || '__/ _ \/ _ \___ \ / __| '__| | '_ \| __|
+|  __/ (_| | | | | | | | || | |  __/  __/___) | (__| |  | | |_) | |_ 
+|_|   \__,_|_|_| |_| |_|_||_|  \___|\___|____/ \___|_|  |_| .__/ \__|
+                                                          |_|        
+	
+	${GREEN} $NAME ${NOCOLOR}- ${YELLOW} $VERSION ${NOCOLOR} made by ${GREEN}(Gomidee) ${NOCOLOR}(enjoy!)"
+							  
 
   echo "Are you ready? [Y,n]"
   read input
