@@ -87,6 +87,7 @@ read input
                 #Default Rules
                 ufw default deny incoming
 		ufw default allow outgoing
+		vi /etc/default/ufw
 
 		echo "OK"
 
