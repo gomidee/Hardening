@@ -19,9 +19,9 @@ NOTICE ->
 
   Downloading and Running the Script
 ```bash
-  wget <RAWFILE>
-  chmod +x <FILENAME>
-  sudo ./<FILENAME>
+  wget https://raw.githubusercontent.com/gomidee/Hardening/main/palmtree.sh
+  chmod +x palmtree.sh
+  sudo ./palmtree.sh
 ```
 
 
