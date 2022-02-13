@@ -41,7 +41,7 @@ apt install ufw vim wget curl wget docker.io docker-compose
 
 #Setting up Tailscale
 
-echo "Would you like to intall Tailscale? [Y,n]"
+echo "Would you like to install Tailscale? [Y,n]"
 read input
 if [[ $input == "Y" || $input == "y" ]]; then
 
