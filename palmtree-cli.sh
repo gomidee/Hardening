@@ -11,7 +11,7 @@ read input
 if [[ $input == "Y" || $input == "y" ]]; then
     
     echo "Please type any packages you would like to install"
-
+    read input
     default_packages="ufw iptables iptables-persistant"
     if [ -x "$(command -v pacman)" ]; then sudo pacman -Syy && pacman -S $input && sudo pacman -S $default_packages
     elif [ -x "$(command -v apt-get)" ]; then sudo apt-get update && sudo apt-get install $input && sudo apt-get install $default_packages
