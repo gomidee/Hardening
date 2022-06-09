@@ -17,7 +17,7 @@ Debian and Arch-based Server Hardening
 
   Downloading and Running the Script
 ```bash
-  wget https://raw.githubusercontent.com/gomidee/Hardening-/main/palmtree.sh
+  wget https://raw.githubusercontent.com/gomidee/Hardening/main/palmtree.sh
   chmod +x palmtree.sh
   sudo ./palmtree.sh
 ```
