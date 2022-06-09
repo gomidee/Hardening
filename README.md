@@ -1,4 +1,4 @@
-# Hardening
+# Hardening 🌴
 Debian and Arch-based Server Hardening
 
 ### Usage
