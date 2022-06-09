@@ -1,21 +1,19 @@
 # Hardening
-Debian/Ubuntu Server Hardening
+Debian and Arch-based Server Hardening
 
-NOTICE ->
+### Usage
 
-• This script is written for Debian/Ubuntu but it may work on other Linux flavours
+-a --auto | Runs Palmtree Script 
+-t --tailscale | Sets up Tailscale 
+-s --ssh | Change SSH settings
+-h --hardeining | Linux Hardening Config 
 
-• Read before you run, you may not want to install some packages and the setup may not be optimal for you. 
+### Before you go ahead and run the script...
 
--> If so, please feel free to fork and update it to your preferences, that would be awesome!
-      
-• This script is designed for servers
+• There are a few steps in this README file that you should read for optimal setup (this really has to be done once)
+• You should run this script as root or with sudo
+• This guide is based of <a href="https://github.com/sunknudsen/privacy-guides/tree/master/how-to-configure-hardened-debian-server">this tutorial. </a>
 
-• Please follow some steps before running the script, they're essential for optimal setup :)
-
-• Personally I don't have the 'sudo' installed by default so after running the script you may want to install it again
-
-  PLEASE RUN THIS SCRIPT AS ROOT USER OR SUDO PRIVILEGES
 
   Downloading and Running the Script
 ```bash
@@ -24,19 +22,18 @@ NOTICE ->
   sudo ./palmtree.sh
 ```
 
+# Create a SSH Key Pair on your computer
 
--> Create a SSH Key Pair on your computer
-
-#Create ssh directory, you probablly know what to do...
+### Create ssh directory
 
 ```bash
   mkdir ~/.ssh
   cd ~/.ssh
 ```
 
-#Create SSH Key Pair
+# Create SSH Key Pair
 
- #Please change the name of you SSH Key Pair, this makes it easier if you have multiple devices/servers
+ ### Please change the name of you SSH Key Pair, this makes it easier if you have multiple devices/servers
 
 ```bash
   ssh-keygen -t rsa -C "MYCOOLSSHKEY"
@@ -44,28 +41,28 @@ NOTICE ->
   cat MYCOOLSSHKEY.pub
 ```
 
-#Login to your server as root
+# Login to your server as root
 
 ```bash
   ssh root@YOURCOOLIP -i ~/.ssh/MYCOOLSSHKEY
   ```
 
-#Disable bash history
+# Disable bash history
 
 ```bash
   echo "HISTFILESIZE=0" >> ~/.bashrc
   source ~/.bashrc
 ```
 
-#Create a password for root
+# Create a password for root
   
   ```bash
   passwd
   
  ```
-  #Type you cool and strong password :)
+  # Type you cool and strong password :)
 
-#Add a user
+# Add a user
 
 ```bash
 
@@ -73,38 +70,38 @@ NOTICE ->
   
   ```
 
-#Copy root authorized_keys to your user home directory
+# Copy root authorized_keys to your user home directory
 
-#IF YOUR USER IS SOMETHING OTHER THEN 'cool-guy' PLEASE CHANGE 'cool-guy' to your user name
+# IF YOUR USER IS SOMETHING OTHER THEN 'cool-guy' PLEASE CHANGE 'cool-guy' to your user name
 
 ```bash
   mkdir /home/cool-guy/.ssh
   cp /root/.ssh/authorized_keys /home/cool-guy/.ssh/authorized_keys
   chown -R cool-guy:cool-guy /home/cool-guy/.ssh
 ```
-#Exit 
+# Exit 
 
 ```bash
   exit
 ```
 
-#Login as cool-guy
+# Login as cool-guy
 
 ```bash
   ssh cool-guy@YOUCOOLIP -i ~/.ssh/MYCOOLSSHKEY
   ```
 
-#IF THAT WORKED, YOU'RE PRETTY MUCH GOOD 2 GO
+# IF THAT WORKED, YOU'RE PRETTY MUCH GOOD 2 GO
 
-#Switch to root
+## Switch to root
 
 ```bash
   su -
   ```
 
-  #type your cool and strong password
+type your cool and strong password
 
-#Disable root login and password authentication
+# Disable root login and password authentication
 
 ```bash
   sed -i -E 's/^(#)?PermitRootLogin (prohibit-password|yes)/PermitRootLogin no/' /etc/ssh/sshd_config
@@ -112,11 +109,11 @@ NOTICE ->
   systemctl restart ssh
   ```
 
-#Run the following as root
+# Run the following as root
 
 ```bash
   apt update
   apt upgrade -y
   ```
 
-RUN THE SCRIPT, YOU SHOULD BE GOOD TO GO!
+# Good to go, enjoy!
