@@ -60,7 +60,7 @@ Debian and Arch-based Server Hardening
   passwd
   
  ```
-  # Type you cool and strong password :)
+  #### Type you cool and strong password :)
 
 # Add a user
 
@@ -72,7 +72,7 @@ Debian and Arch-based Server Hardening
 
 # Copy root authorized_keys to your user home directory
 
-# IF YOUR USER IS SOMETHING OTHER THEN 'cool-guy' PLEASE CHANGE 'cool-guy' to your user name
+#### IF YOUR USER IS SOMETHING OTHER THEN 'cool-guy' PLEASE CHANGE 'cool-guy' to your user name
 
 ```bash
   mkdir /home/cool-guy/.ssh
@@ -90,8 +90,6 @@ Debian and Arch-based Server Hardening
 ```bash
   ssh cool-guy@YOUCOOLIP -i ~/.ssh/MYCOOLSSHKEY
   ```
-
-# IF THAT WORKED, YOU'RE PRETTY MUCH GOOD 2 GO
 
 ## Switch to root
 
@@ -116,4 +114,4 @@ type your cool and strong password
   apt upgrade -y
   ```
 
-# Good to go, enjoy!
+Good to go, enjoy! 
