@@ -10,9 +10,9 @@ Debian and Arch-based Server Hardening
 
 ### Before you go ahead and run the script...
 
-• There are a few steps in this README file that you should read for optimal setup (this really has to be done once)
-• You should run this script as root or with sudo
-• This guide is based of <a href="https://github.com/sunknudsen/privacy-guides/tree/master/how-to-configure-hardened-debian-server">this tutorial. </a>
+- There are a few steps in this README file that you should read for optimal setup (this really has to be done once)
+- You should run this script as root or with sudo
+- This guide is based of <a href="https://github.com/sunknudsen/privacy-guides/tree/master/how-to-configure-hardened-debian-server">this tutorial. </a>
 
 
   Downloading and Running the Script
