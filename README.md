@@ -4,8 +4,11 @@ Debian and Arch-based Server Hardening
 ### Usage
 
 -a --auto | Runs Palmtree Script 
+
 -t --tailscale | Sets up Tailscale 
+
 -s --ssh | Change SSH settings
+
 -h --hardeining | Linux Hardening Config 
 
 ### Before you go ahead and run the script...
