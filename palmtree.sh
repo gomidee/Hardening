@@ -41,9 +41,11 @@ source ~/.bashrc
 
 auto() {
 
-  wget https://raw.githubusercontent.com/gomidee/Hardening/main/palmtree.sh
-  chmod +x palmtree.sh
-  sudo ./palmtree.sh
+ hardening
+ tailscale
+ ssh
+ ufw
+ 
 }
 
 tailscale() {
