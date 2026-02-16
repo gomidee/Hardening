@@ -86,7 +86,7 @@ log_info "STEP 1/8 — Updating system and installing packages..."
 
 apt-get update -y
 apt-get upgrade -y
-apt-get install -y ufw iptables iptables-persistent unattended-upgrades apt-listchanges curl
+apt-get install -y ufw unattended-upgrades apt-listchanges curl
 
 log_ok "System updated and packages installed."
 
